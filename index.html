@@ -1,137 +1,14 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Сюрприз! 🎵</title>
-    <style>
-        body {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            font-family: 'Arial', sans-serif;
-            text-align: center;
-            padding: 50px 20px;
-            margin: 0;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        
-        .container {
-            background: rgba(0, 0, 0, 0.7);
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-            max-width: 500px;
-            width: 100%;
-        }
-        
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        }
-        
-        .emoji {
-            font-size: 4em;
-            margin: 20px 0;
-            animation: bounce 2s infinite;
-        }
-        
-        .button {
-            background: #ff6b6b;
-            color: white;
-            border: none;
-            padding: 15px 30px;
-            font-size: 1.2em;
-            border-radius: 50px;
-            cursor: pointer;
-            margin: 20px 0;
-            transition: all 0.3s ease;
-            box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
-        }
-        
-        .button:hover {
-            background: #ff5252;
-            transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(255, 107, 107, 0.6);
-        }
-        
-        .button:active {
-            transform: translateY(1px);
-        }
-        
-        .auto-redirect {
-            margin-top: 30px;
-            font-size: 0.9em;
-            opacity: 0.8;
-        }
-        
-        @keyframes bounce {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
-        }
-        
-        /* Мобильная адаптация */
-        @media (max-width: 600px) {
-            .container {
-                padding: 20px;
-                margin: 10px;
-            }
-            
-            h1 {
-                font-size: 2em;
-            }
-            
-            .emoji {
-                font-size: 3em;
-            }
-        }
-    </style>
+    <title>Звуковой розыгрыш</title>
+    <meta http-equiv="refresh" content="2;url=https://www.myinstants.com/ru/instant/diadia-sasha-93857/?utm_source=copy&utm_medium=share">
 </head>
 <body>
-    <div class="container">
-        <div class="emoji">🎵</div>
-        <h1>Звуковой Сюрприз!</h1>
-        <p>Нажми на кнопку ниже, чтобы услышать забавный звук! 🔊</p>
-        
-        <button class="button" onclick="playSound()">
-            🎶 Включить звук 🎶
-        </button>
-        
-        <p class="auto-redirect">Автоматическое перенаправление через <span id="countdown">10</span> секунд...</p>
-    </div>
-
     <script>
-        function playSound() {
-            // Открываем страницу со звуком в новом окне/вкладке
-            window.open('https://www.myinstants.com/ru/instant/diadia-sasha-93857/?utm_source=copy&utm_medium=share', '_blank');
-            
-            // Можно также попробовать перенаправить текущую страницу
-            // window.location.href = 'https://www.myinstants.com/ru/instant/diadia-sasha-93857/?utm_source=copy&utm_medium=share';
-        }
-        
-        // Автоматическое перенаправление через 10 секунд
-        let seconds = 10;
-        const countdownElement = document.getElementById('countdown');
-        
-        const countdown = setInterval(function() {
-            seconds--;
-            countdownElement.textContent = seconds;
-            
-            if (seconds <= 0) {
-                clearInterval(countdown);
-                playSound();
-            }
-        }, 1000);
-        
-        // Попытка автовоспроизведения при загрузке страницы
-        document.addEventListener('DOMContentLoaded', function() {
-            // Некоторые браузеры могут блокировать это, но попробуем
-            setTimeout(playSound, 1000);
-        });
+        // Сразу перенаправляем на страницу со звуком
+        window.location.href = 'https://www.myinstants.com/ru/instant/diadia-sasha-93857/?utm_source=copy&utm_medium=share';
     </script>
+    <p>Перенаправление на страницу со звуком...</p>
 </body>
 </html>
